@@ -26,8 +26,8 @@ Um portfólio moderno e responsivo desenvolvido com Next.js, Tailwind CSS, shadc
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/francineyfreitas/portfolio.git
-cd portfolio
+git clone https://github.com/FrancineyFreitas/portfolio.franciney.git
+cd portfolio.franciney
 ```
 
 2. Instale as dependências:
@@ -45,7 +45,7 @@ npm run dev
 ## 📁 Estrutura do Projeto
 
 ```
-portfolio/
+portfolio.franciney/
 ├── app/                    # App Router do Next.js
 │   ├── eng/               # Versão em inglês
 │   ├── globals.css        # Estilos globais
