@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Sun, Moon, Globe, Home, User, Briefcase, Code, Mail, BookOpen, Layout } from 'lucide-react';
+import { Menu, X, Sun, Moon, Globe, Home, User, Briefcase, Code, Mail, Layout } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -37,7 +37,6 @@ export default function Navigation() {
     { key: 'experience', href: getHref('experience', locale === 'en' ? '/eng#experience' : '#experience'), icon: Briefcase },
     { key: 'skills', href: getHref('skills', locale === 'en' ? '/eng#skills' : '#skills'), icon: Code },
     { key: 'landingPages', href: locale === 'en' ? '/eng/landing-pages' : '/landing-pages', icon: Layout },
-    { key: 'blog', href: locale === 'en' ? '/eng/blog' : '/blog', icon: BookOpen },
     { key: 'contact', href: getHref('contact', locale === 'en' ? '/eng#contact' : '#contact'), icon: Mail },
   ];
 

@@ -41,7 +41,6 @@ export default function Footer() {
     { name: t.nav.about, href: locale === 'en' ? '/eng#about' : '#about' },
     { name: t.nav.experience, href: locale === 'en' ? '/eng#experience' : '#experience' },
     { name: t.nav.skills, href: locale === 'en' ? '/eng#skills' : '#skills' },
-    { name: t.nav.blog, href: locale === 'en' ? '/eng/blog' : '/blog' },
     { name: t.nav.landingPages, href: locale === 'en' ? '/eng/landing-pages' : '/landing-pages' },
     { name: t.nav.contact, href: locale === 'en' ? '/eng#contact' : '#contact' },
   ];

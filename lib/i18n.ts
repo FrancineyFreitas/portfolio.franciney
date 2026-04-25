@@ -6,7 +6,6 @@ export const translations = {
       experience: "Experiência",
       skills: "Habilidades",
       contact: "Contato",
-      blog: "Blog",
       landingPages: "Landing Pages",
     },
     hero: {
@@ -190,11 +189,6 @@ export const translations = {
         "Experiência com metodologias ágeis",
         "Comunicação clara e profissional"
       ],
-      blog: {
-        title: "Acesse o meu Blog de Notícias",
-        description: "Fique por dentro das últimas novidades em tecnologia, desenvolvimento e inovação.",
-        button: "Visitar Blog"
-      }
     },
     footer: {
       rights: "Todos os direitos reservados.",
@@ -244,7 +238,6 @@ export const translations = {
       experience: "Experience",
       skills: "Skills",
       contact: "Contact",
-      blog: "Blog",
       landingPages: "Landing Pages",
     },
     hero: {
@@ -428,11 +421,6 @@ export const translations = {
         "Experience with agile methodologies",
         "Clear and professional communication"
       ],
-      blog: {
-        title: "Access my News Blog",
-        description: "Stay up to date with the latest news in technology, development and innovation.",
-        button: "Visit Blog"
-      }
     },
     footer: {
       rights: "All rights reserved.",

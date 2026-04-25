@@ -272,47 +272,6 @@ export default function Contact() {
                   </form>
                 </CardContent>
               </Card>
-
-              {/* Blog Card */}
-              <Card className="p-6 bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20">
-                <CardContent>
-                  <div className="text-left">
-                    <div className="flex justify-start mb-4">
-                      <div className="bg-black dark:bg-transparent p-2 rounded-lg">
-                      <Image 
-                        src="https://alonerd.com/wp-content/uploads/2025/03/lrv-1-1.png" 
-                        alt="AloNerd Logo" 
-                        width={48}
-                        height={48}
-                        className="h-12 w-auto object-contain"
-   />
-                      </div>
-                    </div>
-                    <h3 className="text-lg font-bold mb-2">
-                      {t.contact.blog.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      {t.contact.blog.description}
-                    </p>
-                    <Button
-                      variant="modern"
-                      size="sm"
-                      className="px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 hover:scale-105"
-                      asChild
-                    >
-                    <a
-                      href="https://alonerd.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2"
-                    >
-                      {t.contact.blog.button}
-                      <span className="text-xs opacity-60">→</span>
-                    </a>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
             </motion.div>
           </div>
         </motion.div>
