@@ -58,7 +58,7 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://vmi3259117.contaboserver.net/webhook/francineyfreitas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,6 +67,7 @@ export default function Contact() {
           name: formData.name,
           email: formData.email,
           message: formData.message,
+          timestamp: new Date().toISOString(),
         }),
       });
 
