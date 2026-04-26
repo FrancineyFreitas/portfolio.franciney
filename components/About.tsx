@@ -61,6 +61,18 @@ export default function About() {
 
   const certifications = [
     {
+      name: t.about.certificationsItems.cloudComputing,
+      year: "2026",
+    },
+    {
+      name: t.about.certificationsItems.databaseAdmin,
+      year: "2026",
+    },
+    {
+      name: t.about.certificationsItems.dataModeling,
+      year: "2026",
+    },
+    {
       name: "Linkedin e Tiktok Ads: criação e estratégias de campanhas - Alura",
       year: "2025",
     },

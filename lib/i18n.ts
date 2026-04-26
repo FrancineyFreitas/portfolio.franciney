@@ -53,6 +53,9 @@ export const translations = {
         fullstack: "Programador Full Stack JavaScript – OneBitCode",
         security: "Segurança em Tecnologia da Informação – Fundação Bradesco",
         scrum: "Registered Scrum Basics – Scrum Inc.",
+        cloudComputing: "Cloud Computing - AWS, Google Cloud e Azure - Udemy",
+        databaseAdmin: "Administrando Banco de Dados - Fundação Bradesco",
+        dataModeling: "Modelagem de Dados - Fundação Bradesco",
       },
     },
     experience: {
@@ -285,6 +288,9 @@ export const translations = {
         fullstack: "Full Stack JavaScript Programmer – OneBitCode",
         security: "Information Technology Security – Fundação Bradesco",
         scrum: "Registered Scrum Basics – Scrum Inc.",
+        cloudComputing: "Cloud Computing - AWS, Google Cloud and Azure - Udemy",
+        databaseAdmin: "Database Administration - Fundação Bradesco",
+        dataModeling: "Data Modeling - Fundação Bradesco",
       },
     },
     experience: {
