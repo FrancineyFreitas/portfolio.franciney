@@ -58,7 +58,7 @@ export default function Contact() {
     setSubmitStatus('idle');
 
     try {
-      const response = await fetch('https://workflows.cloud.dmcitsolutions.com/webhook/francineyfreitas', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -67,7 +67,6 @@ export default function Contact() {
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          timestamp: new Date().toISOString(),
         }),
       });
 
