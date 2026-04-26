@@ -50,7 +50,7 @@ export default function AIAgent() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://workflows.cloud.dmcitsolutions.com/webhook/832523c7-f174-4aed-b1d6-e6d952ba60a5/chat', {
+      const response = await fetch('https://vmi3259117.contaboserver.net/webhook/832523c7-f174-4aed-b1d6-e6d952ba60a5/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
