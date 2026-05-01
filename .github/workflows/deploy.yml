@@ -30,12 +30,12 @@ jobs:
       - name: List build output
         run: ls -la out/
 
-      - name: Deploy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      - name: Deploy via SFTP
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./out/
-          server-dir: /public_html/
-          exclude: "**/.git* **/.git*/** **/node_modules/**"
+          port: 65002
+          local_path: ./out/*
+          remote_path: /home/u607967651/domains/francineyfreitas.com.br/public_html
