@@ -206,7 +206,7 @@ export const translations = {
         myria: {
           name: "Myriã Fernandes",
           position: "Professional",
-          photo: "https://media.licdn.com/dms/image/v2/D4E03AQEtpByWgLrtbw/profile-displayphoto-scale_100_100/B4EZldOjaYKUAc-/0/1758205721465?e=1779321600&v=beta&t=mCnGkOyhPRfwpWO2WiXCSJzRv0Fd2T5Xdmv6AvzeONQ",
+          photo: "https://media.licdn.com/dms/image/v2/D4E03AQEtpByWgLrtbw/profile-displayphoto-scale_100_100/B4EZldOjaYKUAc-/0/1758205721465?e=1779321600&v=beta&t=mCnGkOyhPRfwpWO2WiXCSJzRvqFd2T5Xdmv6AvzeONQ",
           text: "Franciney é um profissional curioso, criativo, inteligente, com domínio técnico em WordPress e soluções avançadas, além de ser comunicativo, colaborativo e inovador."
         },
         ellen: {
@@ -471,7 +471,7 @@ export const translations = {
         myria: {
           name: "Myriã Fernandes",
           position: "Professional",
-          photo: "https://media.licdn.com/dms/image/v2/D4E03AQEtpByWgLrtbw/profile-displayphoto-scale_100_100/B4EZldOjaYKUAc-/0/1758205721465?e=1779321600&v=beta&t=mCnGkOyhPRfwpWO2WiXCSJzRv0Fd2T5Xdmv6AvzeONQ",
+          photo: "https://media.licdn.com/dms/image/v2/D4E03AQEtpByWgLrtbw/profile-displayphoto-scale_100_100/B4EZldOjaYKUAc-/0/1758205721465?e=1779321600&v=beta&t=mCnGkOyhPRfwpWO2WiXCSJzRvqFd2T5Xdmv6AvzeONQ",
           text: "Franciney is a curious, creative, intelligent professional with technical mastery in WordPress and advanced solutions, besides being communicative, collaborative and innovative."
         },
         ellen: {
