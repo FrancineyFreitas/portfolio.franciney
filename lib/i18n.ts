@@ -193,6 +193,36 @@ export const translations = {
         "Comunicação clara e profissional"
       ],
     },
+    testimonials: {
+      title: "Recomendações",
+      subtitle: "O que as pessoas dizem sobre mim",
+      testimonialsItems: {
+        layane: {
+          name: "Layane Bentes",
+          position: "IT Operations",
+          photo: "https://media.licdn.com/dms/image/v2/D4E03AQESF_9vDxry7A/profile-displayphoto-shrink_100_100/B4EZY0VOdhGgAU-/0/1744634702243?e=1779321600&v=beta&t=ZYJmgQk-gBqtfzzzt8ZJZF_n2YqFDNafjJMEjerUoaY",
+          text: "Foi um prazer trabalhar com você Fran. É um profissional muito dinâmico, e se adapta rapidamente a cada cenário. Sempre aparecia com alguma coisa nova pra compartilhar, adiantava suas tarefas e tinha um protótipo pronto para cada situação. Sempre achei incrível isso!! Buscava aprender o que não sabia e também gostava logo de aplicar na prática tudo. Tem um ótimo trabalho em equipe, gosta muito de ajudar quando precisam. Além de suas qualidades profissionais, Fran sempre foi uma pessoa muito carismática, positiva, incentivador e batalhador. ✨"
+        },
+        myria: {
+          name: "Myriã Fernandes",
+          position: "Professional",
+          photo: "https://media.licdn.com/dms/image/v2/D4E03AQEtpByWgLrtbw/profile-displayphoto-scale_100_100/B4EZldOjaYKUAc-/0/1758205721465?e=1779321600&v=beta&t=mCnGkOyhPRfwpWO2WiXCSJzRv0Fd2T5Xdmv6AvzeONQ",
+          text: "Franciney é um profissional curioso, criativo, inteligente, com domínio técnico em WordPress e soluções avançadas, além de ser comunicativo, colaborativo e inovador."
+        },
+        ellen: {
+          name: "Ellen Viana",
+          position: "UX/UI Designer | Desenvolvedora front-end & Mobile | Mestranda em IHC na UFPR",
+          photo: "https://media.licdn.com/dms/image/v2/D4D03AQHbebpNdrhI5Q/profile-displayphoto-scale_100_100/B4DZy40Fu1HIAc-/0/1772627191482?e=1779321600&v=beta&t=XKkILUykEQYVKc0A_gsEkvyDVgwP0-RB5uixBBDrMSY",
+          text: "Franciney é um profissional que se destaca pela competência e capacidade de se adaptar a cada desafio. Trabalhamos juntos na Konneqt, e ele está sempre aberto a explorar novas ferramentas e aplicar feedbacks de UI/UX para aprimorar seus projetos. Além das entregas técnicas, impressiona sua dedicação e adaptabilidade. Sempre receptivo a sugestões, busca constantemente maneiras de elevar a qualidade das entregas, demonstrando humildade, foco em resultados e espírito colaborativo. É inspirador acompanhar sua evolução e a forma como contribui para o time e para a empresa, atuando sempre a um nível acima das responsabilidades que lhe são atribuídas."
+        },
+        carlos: {
+          name: "Carlos Alberto",
+          position: "Líder de Equipe",
+          photo: "https://media.licdn.com/dms/image/v2/D4D03AQFTzL7vIxCbgw/profile-displayphoto-scale_100_100/B4DZh4EtGkGgAc-/0/1754361159129?e=1779321600&v=beta&t=Gm6kwlMZX8JvaNfvW6TSHqMRWFAs3kTFlx9A-NlKeWc",
+          text: "Trabalhar com o Franciney foi uma experiência extremamente positiva. Como Web Designer da equipe que liderei, ele sempre demonstrou uma impressionante facilidade de aprendizado, absorvendo rapidamente novos conceitos e ferramentas. Sua proatividade foi um grande diferencial, pois não apenas cumpria suas responsabilidades com excelência, mas também buscava constantemente soluções criativas e melhorias para os projetos. Outro ponto que merece destaque é a sua atenção às tendências do mercado digital. O Franciney estava sempre atualizado sobre novas práticas de Design, UX, tecnologia e Inteligência Artificial, trazendo insights valiosos que enriqueceram a qualidade e a inovação do nosso time. Sem dúvida, é um profissional que alia dedicação, visão de futuro e a vontade genuína de evoluir sempre. Foi um prazer tê-lo na equipe!"
+        }
+      }
+    },
     footer: {
       rights: "Todos os direitos reservados.",
       navigation: "Navegação",
@@ -427,6 +457,36 @@ export const translations = {
         "Experience with agile methodologies",
         "Clear and professional communication"
       ],
+    },
+    testimonials: {
+      title: "Recommendations",
+      subtitle: "What people say about me",
+      testimonialsItems: {
+        layane: {
+          name: "Layane Bentes",
+          position: "IT Operations",
+          photo: "https://media.licdn.com/dms/image/v2/D4E03AQESF_9vDxry7A/profile-displayphoto-shrink_100_100/B4EZY0VOdhGgAU-/0/1744634702243?e=1779321600&v=beta&t=ZYJmgQk-gBqtfzzzt8ZJZF_n2YqFDNafjJMEjerUoaY",
+          text: "It was a pleasure working with you Fran. You are a very dynamic professional who adapts quickly to every scenario. You always showed up with something new to share, anticipated your tasks and had a prototype ready for every situation. I always found that amazing!! You sought to learn what you didn't know and liked to apply everything in practice right away. You have great teamwork skills, love helping when needed. Besides your professional qualities, Fran has always been a very charismatic, positive, encouraging and hardworking person. ✨"
+        },
+        myria: {
+          name: "Myriã Fernandes",
+          position: "Professional",
+          photo: "https://media.licdn.com/dms/image/v2/D4E03AQEtpByWgLrtbw/profile-displayphoto-scale_100_100/B4EZldOjaYKUAc-/0/1758205721465?e=1779321600&v=beta&t=mCnGkOyhPRfwpWO2WiXCSJzRv0Fd2T5Xdmv6AvzeONQ",
+          text: "Franciney is a curious, creative, intelligent professional with technical mastery in WordPress and advanced solutions, besides being communicative, collaborative and innovative."
+        },
+        ellen: {
+          name: "Ellen Viana",
+          position: "UX/UI Designer | Front-end & Mobile Developer | HCI Master's Student at UFPR",
+          photo: "https://media.licdn.com/dms/image/v2/D4D03AQHbebpNdrhI5Q/profile-displayphoto-scale_100_100/B4DZy40Fu1HIAc-/0/1772627191482?e=1779321600&v=beta&t=XKkILUykEQYVKc0A_gsEkvyDVgwP0-RB5uixBBDrMSY",
+          text: "Franciney is a professional who stands out for competence and ability to adapt to every challenge. We worked together at Konneqt, and he is always open to exploring new tools and applying UI/UX feedback to improve his projects. Beyond technical deliveries, his dedication and adaptability are impressive. Always receptive to suggestions, he constantly seeks ways to elevate delivery quality, demonstrating humility, focus on results and collaborative spirit. It's inspiring to follow his evolution and how he contributes to the team and company, always acting at a level above the responsibilities assigned to him."
+        },
+        carlos: {
+          name: "Carlos Alberto",
+          position: "Team Leader",
+          photo: "https://media.licdn.com/dms/image/v2/D4D03AQFTzL7vIxCbgw/profile-displayphoto-scale_100_100/B4DZh4EtGkGgAc-/0/1754361159129?e=1779321600&v=beta&t=Gm6kwlMZX8JvaNfvW6TSHqMRWFAs3kTFlx9A-NlKeWc",
+          text: "Working with Franciney was an extremely positive experience. As a Web Designer on the team I led, he always demonstrated impressive learning ability, quickly absorbing new concepts and tools. His proactivity was a great differentiator, as he not only fulfilled his responsibilities with excellence but also constantly sought creative solutions and improvements for projects. Another point worth highlighting is his attention to digital market trends. Franciney was always updated on new Design, UX, technology and Artificial Intelligence practices, bringing valuable insights that enriched our team's quality and innovation. Undoubtedly, a professional who combines dedication, future vision and genuine desire to always evolve. It was a pleasure having him on the team!"
+        }
+      }
     },
     footer: {
       rights: "All rights reserved.",
