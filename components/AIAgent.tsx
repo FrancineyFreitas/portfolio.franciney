@@ -2,8 +2,9 @@
 
 import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, X, Send, Bot } from 'lucide-react';
+import { MessageCircle, X, Send, Bot, Mail } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import ReactMarkdown from 'react-markdown';
 
 interface Message {
   id: string;
@@ -144,6 +145,15 @@ export default function AIAgent() {
     }
   };
 
+  const handleQuickReply = (text: string) => {
+    setInputMessage(text);
+    setTimeout(() => handleSendMessage(), 100);
+  };
+
+  const handleContactEmail = () => {
+    window.open('mailto:francineysfreitas@gmail.com', '_blank');
+  };
+
   return (
     <>
       {/* Floating Chat Button */}
@@ -224,7 +234,18 @@ export default function AIAgent() {
                         : 'bg-muted text-muted-foreground'
                     }`}
                   >
-                    <p className="text-sm whitespace-pre-wrap break-words">{message.text}</p>
+                    <div className="text-sm whitespace-pre-wrap break-words prose prose-sm dark:prose-invert max-w-none">
+                      <ReactMarkdown 
+                        components={{
+                          a: ({ node, ...props }) => (
+                            <a {...props} className="text-primary underline hover:text-primary/80" target="_blank" rel="noopener noreferrer" />
+                          ),
+                          p: ({ node, ...props }) => <p {...props} className="mb-0" />
+                        }}
+                      >
+                        {message.text}
+                      </ReactMarkdown>
+                    </div>
                     <p className="text-xs opacity-70 mt-1">
                       {message.timestamp.toLocaleTimeString('pt-BR', {
                         hour: '2-digit',
@@ -256,6 +277,27 @@ export default function AIAgent() {
               <div ref={messagesEndRef} />
             </div>
 
+            {/* Quick Replies */}
+            <div className="px-4 py-2 bg-background border-t border-border">
+              <div className="flex gap-2 flex-wrap">
+                <button
+                  onClick={handleContactEmail}
+                  className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-full border border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary transition-colors"
+                  disabled={isLoading}
+                >
+                  <Mail className="h-3 w-3" />
+                  Falar com o Franciney
+                </button>
+                <button
+                  onClick={() => handleQuickReply('Quais as skills do Franciney?')}
+                  className="px-3 py-1.5 text-xs font-medium rounded-full border border-primary/30 bg-primary/5 hover:bg-primary/10 text-primary transition-colors"
+                  disabled={isLoading}
+                >
+                  Quais as skills do Franciney?
+                </button>
+              </div>
+            </div>
+
             {/* Input */}
             <div className="border-t border-border p-4 bg-background">
               <div className="flex items-center space-x-2">
@@ -277,6 +319,10 @@ export default function AIAgent() {
                   <Send className="h-4 w-4" />
                 </button>
               </div>
+              {/* AI Disclaimer */}
+              <p className="text-[10px] text-muted-foreground text-center mt-2">
+                Conteúdo gerado por IA, pode haver imprecisão.
+              </p>
             </div>
           </motion.div>
         )}
