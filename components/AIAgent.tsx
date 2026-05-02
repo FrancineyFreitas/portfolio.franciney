@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, X, Send, Bot } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
@@ -26,6 +26,30 @@ export default function AIAgent() {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const { locale } = useLanguage();
+
+  // Generate sessionId once when component mounts
+  const sessionId = useMemo(() => 'user-session-' + Date.now(), []);
+
+  // Send locale information to n8n when language changes
+  useEffect(() => {
+    if (isOpen) {
+      // Send locale update to n8n to inform the AI about language change
+      fetch('https://vmi3259117.contaboserver.net/webhook/832523c7-f174-4aed-b1d6-e6d952ba60a5/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          chatInput: '',
+          sessionId: sessionId,
+          locale: locale,
+          languageChange: true
+        }),
+      }).catch(error => {
+        console.error('Error sending locale update:', error);
+      });
+    }
+  }, [locale, isOpen, sessionId]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -57,7 +81,8 @@ export default function AIAgent() {
         },
         body: JSON.stringify({
           chatInput: inputMessage,
-          sessionId: 'user-session-' + Date.now()
+          sessionId: sessionId,
+          locale: locale
         }),
       });
 
