@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Smartphone, Zap, Palette, Clock, Scale, ArrowRight, Newspaper, Globe, TrendingUp, Users } from 'lucide-react';
+import { ExternalLink, Smartphone, Zap, Palette, Clock, Scale, ArrowRight, Newspaper, Globe, TrendingUp, Users, Shield, Building2 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -55,6 +55,21 @@ export default function LandingPages() {
       icon: Clock,
       title: t.landingPages.features.fast,
       description: "Performance optimized for speed"
+    }
+  ];
+
+  const professionalProjects = [
+    {
+      id: "konneqt",
+      title: t.landingPages.konneqt.title,
+      description: t.landingPages.konneqt.description,
+      category: t.landingPages.konneqt.category,
+      url: "https://konneqt.io/",
+      icon: Shield,
+      color: "from-cyan-600 to-blue-700",
+      role: t.landingPages.konneqt.role,
+      period: t.landingPages.konneqt.period,
+      available: true
     }
   ];
 
@@ -193,6 +208,92 @@ export default function LandingPages() {
                       </div>
                       <h3 className="text-lg font-semibold">{feature.title}</h3>
                       <p className="text-sm text-muted-foreground">{feature.description}</p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Professional Projects Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="max-w-6xl mx-auto"
+          >
+            <motion.div variants={itemVariants} className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                {t.landingPages.professionalProjects}
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                {t.landingPages.professionalProjectsSubtitle}
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {professionalProjects.map((project, index) => (
+                <motion.div
+                  key={project.id}
+                  variants={itemVariants}
+                  whileHover={{ y: -8 }}
+                  className="group"
+                >
+                  <Card className="h-full overflow-hidden hover:shadow-2xl transition-all duration-300 group-hover:border-primary/50 bg-white dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800">
+                    <div className="relative">
+                      <div className={`h-40 bg-gradient-to-r ${project.color} flex items-center justify-center`}>
+                        <project.icon className="h-16 w-16 text-white opacity-90" />
+                      </div>
+                      <div className="absolute top-3 right-3">
+                        <Badge className="bg-primary text-white font-semibold">
+                          {project.role}
+                        </Badge>
+                      </div>
+                    </div>
+                    
+                    <CardHeader className="pb-4">
+                      <div className="flex items-center justify-between mb-2">
+                        <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                          {project.title}
+                        </CardTitle>
+                      </div>
+                      <Badge variant="outline" className="w-fit text-xs">
+                        {project.category}
+                      </Badge>
+                    </CardHeader>
+
+                    <CardContent className="space-y-4">
+                      <p className="text-muted-foreground text-sm">
+                        {project.description}
+                      </p>
+
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <Building2 className="h-3 w-3" />
+                        <span>{project.period}</span>
+                      </div>
+
+                      <div className="pt-4">
+                        <Button
+                          asChild
+                          variant="outline"
+                          className="w-full group-hover:scale-105 transition-transform"
+                        >
+                          <a 
+                            href={project.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-2"
+                          >
+                            {t.landingPages.visitSite}
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        </Button>
+                      </div>
                     </CardContent>
                   </Card>
                 </motion.div>
