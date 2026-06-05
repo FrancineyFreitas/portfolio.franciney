@@ -249,6 +249,9 @@ export const translations = {
       description: "Explore nossa coleção de landing pages profissionais, desenvolvidas com foco em conversão e experiência do usuário.",
       viewDemo: "Ver Demonstração",
       comingSoon: "Em Breve",
+      professionalProjects: "Projetos Profissionais",
+      professionalProjectsSubtitle: "Sites institucionais e corporativos desenvolvidos como Web Designer",
+      visitSite: "Visitar Site",
       features: {
         responsive: "Totalmente Responsiva",
         optimized: "Otimizada para Conversão",
@@ -261,6 +264,13 @@ export const translations = {
           description: "Landing page profissional para escritórios de advocacia com foco em conversão de leads jurídicos.",
           category: "Serviços Profissionais"
         }
+      },
+      konneqt: {
+        title: "Konneqt – Cybersecurity",
+        description: "Site institucional completo para empresa de cibersegurança. Desenvolvido como Web Designer, criei toda a interface visual, landing pages, marketplace de ferramentas de IA/LLM e integrações com n8n, ClickUp e Mailchimp.",
+        category: "Cybersecurity",
+        role: "Web Designer (PJ)",
+        period: "nov/2024 – Atualmente"
       }
     },
   },
@@ -514,6 +524,9 @@ export const translations = {
       description: "Explore our collection of professional landing pages, developed with focus on conversion and user experience.",
       viewDemo: "View Demo",
       comingSoon: "Coming Soon",
+      professionalProjects: "Professional Projects",
+      professionalProjectsSubtitle: "Institutional and corporate websites developed as Web Designer",
+      visitSite: "Visit Site",
       features: {
         responsive: "Fully Responsive",
         optimized: "Conversion Optimized",
@@ -526,6 +539,13 @@ export const translations = {
           description: "Professional landing page for law firms focused on legal lead conversion.",
           category: "Professional Services"
         }
+      },
+      konneqt: {
+        title: "Konneqt – Cybersecurity",
+        description: "Complete institutional website for a cybersecurity company. Developed as Web Designer, I created the entire visual interface, landing pages, AI/LLM tools marketplace, and integrations with n8n, ClickUp, and Mailchimp.",
+        category: "Cybersecurity",
+        role: "Web Designer (Contractor)",
+        period: "nov/2024 – Present"
       }
     },
   },
